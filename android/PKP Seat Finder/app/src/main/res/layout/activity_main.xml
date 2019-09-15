@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome on board!"
+        android:textColor="#FAFAFA"
+        android:textSize="27sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/main_subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We wish you pleasant journey"
+        android:textColor="#8394E2"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/train2"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/container_train"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/background_rounded_input"
+        android:padding="7dp"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="EIP XXXX"
+            android:textColorHint="#FAFAFA"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Intercity"
+            android:textColor="#8FFAFAFA"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_car_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/background_rounded_input"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car number"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Choose car"
+            android:textColor="#8FFAFAFA"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Empty seats"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
